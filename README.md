@@ -60,7 +60,9 @@ It returns a Promise that is fulfilled when
 
  
 <a name="openvpnclient_disconnect"></a>
-It returns a Promise that is fulfilled when disconnected
+#### .disconnect()
+
+It returns a Promise that is fulfilled when OpenVpn is Disconnected Successfully 
 
 <a name="openvpnclientcmd_constructor"></a>
 #### Constructor
