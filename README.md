@@ -18,8 +18,8 @@ Documentation
 * [Class: OpenVPNClient](#openvpnclient)
   * [Constructor([auth])](#openvpnclient_authconstructor)
   * [Constructor([vpnOpts])](#openvpnclient_constructor)
-  * [.connect([cb])](#openvpnclient_connect)
-  * [.disconnect([cb])](#openvpnclient_disconnect)
+  * [.connect()](#openvpnclient_connect)
+  * [.disconnect()](#openvpnclient_disconnect)
 * [vpnclient.defaultOpts](#module_defaultOpts)
 * [vpnclient.connect([vpnOpts])](#module_connect)
 
