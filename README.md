@@ -16,9 +16,9 @@ Documentation
 -------------
 
 * [Class: OpenVPNClient](#openvpnclient)
-  * [Constructor([auth])](#openvpnclient_authconstructor)
+  * [Constructor([auth])](#openvpnclient_constructor)
   * [Constructor([vpnOpts])](#openvpnclient_constructor)
-  * [Constructor([cmd])](#openvpnclientcmd_constructor)
+  * [Constructor([cmd])](#openvpnclient_constructor)
   * [.connect()](#openvpnclient_connect)
   * [.cmd()](#openvpnclient_cmd)
   * [.disconnect()](#openvpnclient_disconnect)
@@ -39,9 +39,6 @@ Argument: **vpnOpts** Object passed to .connect()
 }
 ```
 
-<a name="openvpnclient_authconstructor"></a>
-#### Constructor
-
 Argument: **auth** Object containing User/Pass for authorization
 
 ```
@@ -50,6 +47,8 @@ Argument: **auth** Object containing User/Pass for authorization
  pass:  'vpnpassword',
 }
 ```
+
+Argument: **cmd** String to be exsecuted by OpenVpn
 
 
 <a name="openvpnclient_connect"></a>
@@ -63,11 +62,6 @@ It returns a Promise that is fulfilled when
 #### .disconnect()
 
 It returns a Promise that is fulfilled when OpenVpn is Disconnected Successfully 
-
-<a name="openvpnclientcmd_constructor"></a>
-#### Constructor
-
-Argument: **cmd** String to be exsecuted by OpenVpn
 
 
 <a name="openvpnclient_connect"></a>
