@@ -8,7 +8,8 @@ Create an OpenVPN client instance, using "openvpn" command.
 Installation
 ------------
 
-``` npm install node-openvpn --save
+``` 
+npm install node-openvpn --save
 ```
 
 Documentation
@@ -26,25 +27,27 @@ Documentation
 <a name="openvpnclient_constructor"></a>
 #### Constructor
 
-Argument: **vpnOpts** Optional Arguments passed to .connect()
+Argument: **vpnOpts** Object passed to .connect()
 
 ```
 {
-host: '127.0.0.1', // normally '127.0.0.1',
-port: 1337, //port openvpn management is running on
-timeout: 1500 //timeout for connection - optional, will default to 1500ms if undefined
- }
+ host: '127.0.0.1', // normally '127.0.0.1',
+ port: 1337, //port openvpn management is running on
+ timeout: 1500 //timeout for connection - optional, will default to 1500ms if undefined
+}
 ```
 
 <a name="openvpnclient_authconstructor"></a>
 #### Constructor
 
-Argument: **auth** User/Password for authorization
+Argument: **auth** Object containing User/Pass for authorization
 
-```{
-user: 'vpnusername',
-pass:  'vpnpassword',
- }```
+```
+{
+ user: 'vpnusername',
+ pass:  'vpnpassword',
+}
+```
 
 
 <a name="openvpnclient_connect"></a>
