@@ -3,7 +3,7 @@ openvpn-client
 
 [![npm version](https://badge.fury.io/js/node-openvpn.svg)](http://badge.fury.io/js/node-openvpn)
 
-Create an OpenVPN client instance, using "openvpn" command.
+Communicate to an OpenVPN client instance via telenet
 
 Installation
 ------------
@@ -18,7 +18,9 @@ Documentation
 * [Class: OpenVPNClient](#openvpnclient)
   * [Constructor([auth])](#openvpnclient_authconstructor)
   * [Constructor([vpnOpts])](#openvpnclient_constructor)
+  * [Constructor([cmd])](#openvpnclientcmd_constructor)
   * [.connect()](#openvpnclient_connect)
+  * [.cmd()](#openvpnclient_cmd)
   * [.disconnect()](#openvpnclient_disconnect)
 * [vpnclient.defaultOpts](#module_defaultOpts)
 * [vpnclient.connect([vpnOpts])](#module_connect)
@@ -60,12 +62,26 @@ It returns a Promise that is fulfilled when
 <a name="openvpnclient_disconnect"></a>
 It returns a Promise that is fulfilled when disconnected
 
+<a name="openvpnclientcmd_constructor"></a>
+#### Constructor
+
+Argument: **cmd** String to be exsecuted by OpenVpn
+
+
+<a name="openvpnclient_connect"></a>
+#### .cmd()
+
+Passes custom cmd to Open Vpn Instance, returns a Promise with responce
 
 <a name="module_connect"></a>
-### module.connect([auth], [vpnOpts]) => Disposer
+### module.connect([auth], [vpnOpts]) 
 
 It will setup authentication based on the first parameter.
 
+<a name="module_cmd"></a>
+### module.cmd([cmd]) 
+
+Send command to OpenVpn Instance 
 
 Support
 -------
