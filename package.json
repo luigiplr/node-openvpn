@@ -1,32 +1,32 @@
 {
-  "name": "node-openvpn",
-  "version": "0.0.3",
-  "description": "Communicate with a openvpn instance via telnet",
-  "author": {
-    "name": "Luigi Poole",
-    "email": "luigipoole@outlook.com"
-  },
-  "keywords": [
-    "node openvpn",
-    "node vpn",
-    "openvpn client",
-    "openvpn",
-    "client",
-    "vpn",
-    "telnet"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/luigiplr/node-openvpn.git"
-  },
-  "main": "index.js",
-  "license": "GPL-3.0",
-  "dependencies": {
-    "bluebird": "^2.9.34",
-    "lodash": "^3.10.1",
-    "telnet-client": "^0.1.0"
-  },
-  "devDependencies": {
-    "minimist": "^1.2.0"
-  }
+    "name": "node-openvpn",
+    "version": "0.0.4",
+    "description": "Communicate with a openvpn instance via telnet",
+    "author": {
+        "name": "Luigi Poole",
+        "email": "luigipoole@outlook.com"
+    },
+    "keywords": [
+        "node openvpn",
+        "node vpn",
+        "openvpn client",
+        "openvpn",
+        "client",
+        "vpn",
+        "telnet"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/luigiplr/node-openvpn.git"
+    },
+    "main": "index.js",
+    "license": "GPL-3.0",
+    "dependencies": {
+        "bluebird": "^2.9.34",
+        "lodash": "^3.10.1",
+        "telnet-client": "^0.1.0"
+    },
+    "devDependencies": {
+        "minimist": "^1.2.0"
+    }
 }

@@ -20,6 +20,7 @@ Documentation
   * [Constructor([vpnOpts])](#openvpnclient_constructor)
   * [Constructor([cmd])](#openvpnclient_constructor)
   * [.connect()](#openvpnclient_connect)
+  * [.authorize()](#openvpnclient_authorize)
   * [.cmd()](#openvpnclient_cmd)
   * [.disconnect()](#openvpnclient_disconnect)
 * [vpnclient.defaultOpts](#module_defaultOpts)
@@ -39,7 +40,7 @@ Argument: **vpnOpts** Object passed to .connect()
 }
 ```
 
-Argument: **auth** Object containing User/Pass for authorization
+Argument: **auth** Object containing User/Pass, passed to .authorize()
 
 ```
 {
@@ -54,9 +55,13 @@ Argument: **cmd** String to be exsecuted by OpenVpn
 <a name="openvpnclient_connect"></a>
 #### .connect()
 
+establishes connection to management interface
+
+<a name="openvpnclient_authorize"></a>
+#### .authorize()
+
 It returns a Promise that is fulfilled when
 "Inititialization Sequence Completed" message is received from the server.
-
  
 <a name="openvpnclient_disconnect"></a>
 #### .disconnect()
@@ -64,15 +69,20 @@ It returns a Promise that is fulfilled when
 It returns a Promise that is fulfilled when OpenVpn is Disconnected Successfully 
 
 
-<a name="openvpnclient_connect"></a>
+<a name="openvpnclient_cmd"></a>
 #### .cmd()
 
 Passes custom cmd to Open Vpn Instance, returns a Promise with responce
 
 <a name="module_connect"></a>
-### module.connect([auth], [vpnOpts]) 
+### module.connect([vpnOpts]) 
 
-It will setup authentication based on the first parameter.
+Connect to open vpn instance
+
+<a name="module_authorize"></a>
+### module.authorize([auth]) 
+
+Authorize user & password for ovpn & connect.
 
 <a name="module_cmd"></a>
 ### module.cmd([cmd]) 
