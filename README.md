@@ -15,7 +15,8 @@ node-openvpn
 	var opts = {
         host: '127.0.0.1', // normally '127.0.0.1', will default to if undefined 
         port: 1337, //port openvpn management console
-        timeout: 1500 //timeout for connection - optional, will default to 1500ms if undefined
+        timeout: 1500, //timeout for connection - optional, will default to 1500ms if undefined
+        logpath: 'log.txt' //optional write openvpn console output to file, can be relative path or absolute 
     };
     var auth = {
         user: 'vpnUserName', 
