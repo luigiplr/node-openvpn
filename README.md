@@ -25,11 +25,11 @@ node-openvpn
 
     var openvpn = openvpnmanager.connect(opts)
 
-    openvpn.on('connected', function(output) { //will be emited on successful interfacing with openvpn instance
+    openvpn.on('connected', function() { //will be emited on successful interfacing with openvpn instance
         openvpnmanager.authorize(auth);
     });
 
-    openvpn.on('authorized', function(output) { //will be emited on successful connection of vpn. 
+    openvpn.on('authorized', function() { //will be emited on successful connection of vpn. 
         console.log('yay we have connected.');
     });
 
