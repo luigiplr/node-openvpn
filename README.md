@@ -29,12 +29,16 @@ node-openvpn
         openvpnmanager.authorize(auth);
     });
 
-    openvpn.on('console-output', function(output) { //emits console output of openvpn instance as a line
+    openvpn.on('console-output', function(output) { //emits console output of openvpn instance as a string
         console.log(output)
     });
 
     openvpn.on('state-change', function(state) { //emits console output of openvpn state as a array
-        console.log(output)
+        console.log(state)
+    });
+
+    openvpn.on('error', function(error) { //emits console output of openvpn state as a string
+        console.log(error)
     });
 
     openvpnmanager.getLog(console.log) //get all console logs up to this point
