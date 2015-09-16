@@ -1,6 +1,6 @@
 {
     "name": "node-openvpn",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "Communicate with a openvpn instance via telnet",
     "author": {
         "name": "Luigi Poole",
