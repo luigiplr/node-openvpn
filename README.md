@@ -40,6 +40,15 @@ node-openvpn
     openvpnmanager.getLog(console.log) //get all console logs up to this point
 
 
+
+    // and finally when/if you want to
+    openvpnmanager.disconnect();
+
+    openvpn.on('disconnected', function() { //emits on disconnect
+        openvpnmanager.destroy() //finally destroy the disconnected manager 
+    });
+
+
 ```
 
 ## Installation
