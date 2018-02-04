@@ -4,7 +4,7 @@ node-openvpn
 [![Dependency Status](https://img.shields.io/david/luigiplr/node-openvpn.svg)](https://david-dm.org/luigiplr/node-openvpn)
 [![npm](https://img.shields.io/npm/dm/node-openvpn.svg?maxAge=2592000)]()
 
-Communicate to an OpenVPN client instance via telenet using [node](http://nodejs.org).
+Communicate with an OpenVPN client instance via telnet using [node](http://nodejs.org).
 
 ## Installation
 ```bash
