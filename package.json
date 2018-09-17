@@ -6,6 +6,10 @@
     "name": "Luigi Poole",
     "email": "luigipoole@outlook.com"
   },
+  "files": [
+    "lib/**/*",
+    "index.js"
+  ],
   "keywords": [
     "node openvpn",
     "node vpn",
